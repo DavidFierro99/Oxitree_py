@@ -113,7 +113,7 @@ def main(dict):
             "tamanio": "Grande",
             "municipios_conabio": ["Chimaltitán", "Tequila", "Magdalena", "San Juanito de Escobedo", "Etzatlán", "Ameca", "Guachinango", "San Sebastian del Oeste", "Cabo Corrientes", "Talpa de Allende", "Mascota", "Mixtlán", "Atenguillo", "Cuautlitlán de García Barragán", "Atengo", "Tecolotlán", "Tenamaxtlán", "Ayutla", "Union de Tula", "Villa Purificación", "Cuautitlán de García Barragán", "Tolimán", "Zapotitlán de Vadillo", "Autlán de Navarro", "San Gabriel", "Tonila", "Tuxpan", "Pihuamo", "Tealitlán", "Zapotiltic", "Tamazula de Gordiano", "Gómez Farías", "Zapotlán el Grande", "Atoyac", "Mazamitla", "Valle de Juárez", "Quitupan", "Santa María del Oro", "La Manzanilla de la Paz", "Tapalpa", "Chiquilistlán", "Atemajac de Brizuela", "Tecolotlán", "Unión de Tula"],
             "regiones_koppen": ['CWB'],
-            "clorofila": 0
+            "clorofila": 1
         },
         {
             "nombre_comun":"Pinus escobetón",

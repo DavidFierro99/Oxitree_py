@@ -7,7 +7,7 @@ def main(dict):
             "tamanio": "Pequeño",
             "municipios_conabio": [],
             "regiones_koppen": ['CWA'],
-            "clorofila": 0
+            "clorofila": 0,
             "imagen_url": "https://static.wixstatic.com/media/e887b4_198715e94f754dbe8129d8d28b22e39c~mv2.jpg"
             
         },
@@ -53,7 +53,7 @@ def main(dict):
             "tamanio": "Grande",
             "municipios_conabio": ["Unión de San Antonio", "San Diego de Alejandría", "San Julián", "Lagos de Moreno", "Arandas", "Jesús María", "Degollado", "Atotonilco el Alto", "Tepatitlán de Morelos", "San Ignacio Cerro Gordo", "San Miguel el Alto", "Acatic", "Zapotlanejo", "Juanacatlán", "Poncitlán", "Chapala", "Jocotepec", "Tuxcueca", "Tizapán el Alto", "Tlajomulco de Zúñiga", "Zacoalco de Torres", "Villa Corona", "Cocula", "Quitupan", "Valle de Juárez", "Mazamitla", "La Manzanilla de la Paz", "Concepción de Buenos Aires", "Atoyac", "Gómez Farías", "Atemajac de Brizuela", "Tecolotlán", "Tenamaxtlán", "Juchitlán", "Chiquilistlán", "Tapalpa", "San Gabriel"],
             "regiones_koppen": ['CWA', 'CWB'],
-            "clorofila": 33.5
+            "clorofila": 33.5,
             "imagen_url": "https://static.wixstatic.com/media/e887b4_fd0ba7fa974f476d9976ea8be0291573~mv2.jpg"
         },
         {
@@ -90,7 +90,7 @@ def main(dict):
             "tamanio": "Mediano",
             "municipios_conabio": [],
             "regiones_koppen": ['CWA', 'AW'],
-            "clorofila": 36.4
+            "clorofila": 36.4,
             "imagen_url": "https://static.wixstatic.com/media/e887b4_3a8e983dff0148c0b292f2f840e7d6f0~mv2.jpg"
         },
         {
@@ -99,7 +99,7 @@ def main(dict):
             "tamanio": "Mediano",
             "municipios_conabio": [],
             "regiones_koppen": ['AW'],
-            "clorofila": 43.2
+            "clorofila": 43.2,
             "imagen_url": "https://static.wixstatic.com/media/e887b4_3a8e983dff0148c0b292f2f840e7d6f0~mv2.jpg"
         },
         {
@@ -108,8 +108,6 @@ def main(dict):
             "tamanio": "Grande",
             "municipios_conabio": [],
             "regiones_koppen": ['CWA', 'AW'],
-            "clorofila": 0
-            "regiones_koppen": [],
             "clorofila": 0,
             "imagen_url": "https://static.wixstatic.com/media/e887b4_85a02f354edf4dfa886f94a91654b412~mv2.jpg"
         },
@@ -137,7 +135,7 @@ def main(dict):
             "tamanio": "Mediano",
             "municipios_conabio": ["Chimatitlán", "San Martín de Bolaños", "Totatiche", "San Diego de Alejandría", "Acatic", "Arandas", "Jesús María", "San Ignacio Cerro Gordo", "San Julían", "Tepatitlán de Morelos", "Atotonilco el Alto", "Ayotlán", "Degollado", "Jamay", "La Barca", "Ocotlán", "Poncitlán", "Tototlán", "Zapotlán del Rey", "Chapala", "Concepción de Buenos Aires", "Jocotepec", "La Manzanilla de la Paz", "Mazamitla", "Quitupan", "Santa María del Oro", "Tizapán el Alto", "Tuxcueca", "Valle de Juárez", "Jilotlan de los Dolores", "Pihuamo", "San Gabriel", "Tamazula de Gordiano", "Tecalitlán", "Tolimán", "Tonila", "Tuxpan", "Zapotiltic", "Zapotitlán de Vadillo", "Atengo", "Autlán de Navarro", "Ayutla", "Chiquilistlán", "Cuautla", "Ejutla", "El Grullo", "El Limón", "Juchitlán", "Tecolotlán", "Tenamaxtlán", "Tonaya", "Tuxcacuesco", "Union de Tula", "Cabo Corrientes", "Guachinango", "Mascota", "Mixtlán", "Atenguillo", "San Sebastián del Oeste", "Talpa de Allende", "Ahualulco de Mercado", "Amatitán", "Ameca", "El Arenal", "Etzatlán", "Hostotipaquillo", "Magdalena", "San Juanito de Escobedo", "San Marcos", "Tala", "Tequila", "Teuchitlán", "Acatlán de Juárez", "Atemajac de Brizuela", "Cocula", "San Martín Hidalgo", "Tapalpa", "Techaluta de Montenegro", "Villa Corona", "Cuquío", "El Salto", "Guadalajara", "Ixtlahuacán de los Membrillos", "Ixtlahuacán del Río", "Juanacatlán", "San Cristóbal de la Barranca", "Tlaquepaque", "Tlajomulco", "Tonalá", "Zapopan", "Zapotlanejo"],
             "regiones_koppen": ['CWB'],
-            "clorofila": 0
+            "clorofila": 0,
             "imagen_url": "https://static.wixstatic.com/media/e887b4_50d7204ffe144e9cbb0aada0a6c23894~mv2.jpg"
         },
         {
@@ -146,7 +144,7 @@ def main(dict):
             "tamanio": "Grande",
             "municipios_conabio": ["Guachinango", "San Sebastián del Oeste", "Puerto Vallarta", "Mascota", "Talpa de Allende", "Tomatlán", "Cabo Corrientes", "Talpa de Allende", "Tomatlán", "Villa Purificación", "La Huerta", "Cihuatlán", "Cuautitlán de García Barragán", "Casimiro Castillo", "Autlán de Navarro", "Tolimán", "Tuxcuacuesco", "Pihuamo", "Jilotlán de los Dolores", "Santa María del Oro", "Tamazula de Gordiano", "Zapotiltic", "Zapotlán el Grande", "Tuxpan", "Tonila", "Sayula", "Zacoalco de Torres", "Acatlán de Juárez", "Villa Corona", "Cocula", "San Martín Hidalgo", "Ameca", "Teuchitlán", "Guadalajara", "Zapopan", "Tlaquepaque", "Tlajomulco de Zúñiga", "Tonalá"],
             "regiones_koppen": ['CWA', 'AW'],
-            "clorofila": 0
+            "clorofila": 0,
             "imagen_url": "https://static.wixstatic.com/media/e887b4_7a6c3fb70e334594b8e3e71865998b65~mv2.jpg"
         },
         {
@@ -155,7 +153,7 @@ def main(dict):
             "tamanio": "Pequeño",
             "municipios_conabio": ["Bolaños", "San Martín de Bolaños", "Acatic", "Degollado", "Jamay", "La Barca", "Ocotlán", "Poncitlán", "Tototlán", "Zapotlán del Rey", "Chapala", "Santa María del Oro", "Jilotlan de los Dolores", "Pihuamo", "Tamazula de Gordiano", "Tecalitlán", "Tolimán", "Tonila", "Tuxpan", "Zapotiltic", "Zapotitlán de Vadillo", "Atengo", "Autlán de Navarro", "Chiquilistlán", "Ejutla", "El Grullo", "El Limón", "Juchitlán", "Tecolotlán", "Tenamaxtlán", "Tonaya", "Tuxcacuesco", "Union de Tula", "Casimiro Castillo", "Cihuatlán", "Cuautitlán de García Barragán", "La Huerta", "Tomatlán ", "Villa Putificación", "Puerto Vallarta", "Cabo Corrientes", "Guachinango", "San Sebastián del Oeste", "Talpa de Allende", "Ahualulco de Mercado", "Amatitán", "Ameca", "El Arenal", "Etzatlán", "Hostotipaquillo", "Magdalena", "San Juanito de Escobedo", "San Marcos", "Tala", "Tequila", "Teuchitlán", "Acatlán de Juárez", "Cocula", "San Martín Hidalgo", "Villa Corona", "El Salto", "Guadalajara", "Ixtlahuacán de los Membrillos", "Juanacatlán", "San Cristóbal de la Barranca", "Tlaquepaque", "Tlajomulco", "Tonalá", "Zapopan", "Zapotlanejo"],
             "regiones_koppen": ['CWA', 'AW'],
-            "clorofila": 45.6
+            "clorofila": 45.6,
             "imagen_url": "https://static.wixstatic.com/media/e887b4_cb957f930cf34dd6b43d0d8985185846~mv2.jpg"
         }
     ]

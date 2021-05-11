@@ -186,5 +186,3 @@ def main(dict):
 
 mensaje = main({"tamanio": "Pequeño", "municipio": "Guadalajara"})
 print(mensaje)
-
-

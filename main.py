@@ -157,6 +157,10 @@ def main(dict):
             "imagen_url": "https://static.wixstatic.com/media/e887b4_cb957f930cf34dd6b43d0d8985185846~mv2.jpg"
         }
     ]
+
+    KOPPEN = {
+        "Guadalajara": "CWA"
+    }
     
     tamanio = dict["tamanio"]
     municipio = dict["municipio"]

@@ -132,7 +132,7 @@ def main(dict):
         {
             "nombre_comun":"Pinus escobetón",
             "nombre_cien": "Pinus devoniana",
-            "tamanio": "Mediano",
+            "tamanio": "Grande",
             "municipios_conabio": ["Chimatitlán", "San Martín de Bolaños", "Totatiche", "San Diego de Alejandría", "Acatic", "Arandas", "Jesús María", "San Ignacio Cerro Gordo", "San Julían", "Tepatitlán de Morelos", "Atotonilco el Alto", "Ayotlán", "Degollado", "Jamay", "La Barca", "Ocotlán", "Poncitlán", "Tototlán", "Zapotlán del Rey", "Chapala", "Concepción de Buenos Aires", "Jocotepec", "La Manzanilla de la Paz", "Mazamitla", "Quitupan", "Santa María del Oro", "Tizapán el Alto", "Tuxcueca", "Valle de Juárez", "Jilotlan de los Dolores", "Pihuamo", "San Gabriel", "Tamazula de Gordiano", "Tecalitlán", "Tolimán", "Tonila", "Tuxpan", "Zapotiltic", "Zapotitlán de Vadillo", "Atengo", "Autlán de Navarro", "Ayutla", "Chiquilistlán", "Cuautla", "Ejutla", "El Grullo", "El Limón", "Juchitlán", "Tecolotlán", "Tenamaxtlán", "Tonaya", "Tuxcacuesco", "Union de Tula", "Cabo Corrientes", "Guachinango", "Mascota", "Mixtlán", "Atenguillo", "San Sebastián del Oeste", "Talpa de Allende", "Ahualulco de Mercado", "Amatitán", "Ameca", "El Arenal", "Etzatlán", "Hostotipaquillo", "Magdalena", "San Juanito de Escobedo", "San Marcos", "Tala", "Tequila", "Teuchitlán", "Acatlán de Juárez", "Atemajac de Brizuela", "Cocula", "San Martín Hidalgo", "Tapalpa", "Techaluta de Montenegro", "Villa Corona", "Cuquío", "El Salto", "Guadalajara", "Ixtlahuacán de los Membrillos", "Ixtlahuacán del Río", "Juanacatlán", "San Cristóbal de la Barranca", "Tlaquepaque", "Tlajomulco", "Tonalá", "Zapopan", "Zapotlanejo"],
             "regiones_koppen": ['CWB'],
             "clorofila": 0,
@@ -158,30 +158,46 @@ def main(dict):
         }
     ]
     
+    KOPPEN = {
+        "Guadalajara": "CWA"
+    }
+
+    # Obtiene los parametros enviados en formato JSON
     tamanio = dict["tamanio"]
     municipio = dict["municipio"]
 
+    # Valor inicial de variables locales
     observaciones = "Especie compatible con condiciones climáticas"
     arboles_compatibles = []
     txt_arboles = ""
     
+    # Revisa el diccionario de arboles, si encuentra uno con caracteristicas climaticas y tamaño compatible lo añade a arboles_compatibles
     for arbol in ARBOLES_JAL:
-        if arbol["tamanio"] == tamanio and municipio in arbol["municipios_conabio"]:
+        if arbol["tamanio"] == tamanio and KOPPEN[municipio] in arbol["regiones_koppen"]:
             arboles_compatibles.append(arbol) 
-            observaciones = "✅ Especie nativa CONABIO ✅"
-            
 
+    # Ordena los arboles compatibles segun concentracion de clorofila, en el indice 0 queda el que tiene la mayor concentracion
     arboles_compatibles.sort(key=lambda p: p["clorofila"], reverse=True)
 
-    arbol_principal = arboles_compatibles[0]
+    # Si el arbol principal es nativo segun CONABIO cambiar variable observaciones
+    if municipio in arboles_compatibles[0]["municipios_conabio"]:
+        observaciones = "✅ Especie nativa CONABIO ✅"
 
-    del arbol_principal["municipios_conabio"]
-    del arbol_principal["regiones_koppen"]
-    
+    # Borrar llaves del diccionario, para ahorrar espacio en JSON de retorno
+    del arboles_compatibles[0]["municipios_conabio"]
+    del arboles_compatibles[0]["regiones_koppen"]
+
     for arbol in arboles_compatibles[1:]:
-        txt_arboles = txt_arboles + "{} ({})".format(arbol["nombre_comun"],arbol["nombre_cien"]) + "\n"
+        # Estructura texto con informacion de los arboles secundarios
+        txt_arboles = txt_arboles + "{} ({})".format(arbol["nombre_comun"],arbol["nombre_cien"])
 
-    return { 'principal': arbol_principal, 'secundarios': txt_arboles, "nativo": observaciones }
+        # Revisa si el resto de los arboles es nativo CONABIO, para agregar marca de verificación
+        if municipio in arbol["municipios_conabio"]:
+            txt_arboles = txt_arboles + " ✅\n"
+        else:
+            txt_arboles = txt_arboles + "\n"
+            
+    return { 'principal': arboles_compatibles[0], 'secundarios': txt_arboles, "nativo": observaciones }
 
 
 mensaje = main({"tamanio": "Pequeño", "municipio": "Guadalajara"})

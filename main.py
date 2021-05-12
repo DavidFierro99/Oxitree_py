@@ -162,7 +162,7 @@ def main(dict):
             "nombre_cien": "Ceiba pentandra",
             "tamanio": "Grande",
             "municipios_conabio": ["Puerto Vallarta", "San Sebastian del Oeste", "Cabo Corrientes", "Tomatlan", "Villa Purificacion", "La Huerta", "Casimiro Castillo", "Cihuatlan", "Toliman", "Tuxpan", "Pihuamo", "Tuxcacuesco", "El Grullo", "El Limon", "Ejutla", "Tonaya", "Juchitlan", "Tenamaxtlan", "San Juanito de Escobedo", "Amatitan", "Teuchitlan", "Ahualulco de Mercado", "Zapotiltic", "Zapotlan el Grande"],
-            "regiones_koppen": [],
+            "regiones_koppen": ["AW"],
             "clorofila": 37.7,
             "imagen_url": ""
         },
@@ -171,7 +171,7 @@ def main(dict):
             "nombre_cien": "Cupressus lusitanica",
             "tamanio": "Grande",
             "municipios_conabio": [],
-            "regiones_koppen": [],
+            "regiones_koppen": ['CWA', 'CWB'],
             "clorofila": 45.3,
             "imagen_url": "https://static.wixstatic.com/media/e887b4_505afcd7f2d040bb8390939a655f2c4b~mv2.jpg"
         },
@@ -189,7 +189,7 @@ def main(dict):
             "nombre_cien": "Fraxinus uhdei",
             "tamanio": "Grande",
             "municipios_conabio": [],
-            "regiones_koppen": [],
+            "regiones_koppen": ["CWA", "CWB"],
             "clorofila": 32.7,
             "imagen_url": ""
         },
@@ -265,6 +265,15 @@ def main(dict):
             "regiones_koppen": ['CWB'],
             "clorofila": 0,
             "imagen_url": "https://static.wixstatic.com/media/e887b4_50d7204ffe144e9cbb0aada0a6c23894~mv2.jpg"
+        },
+        {
+            "nombre_comun":"Pinus ocote",
+            "nombre_cien": "Pinus Teocote",
+            "tamanio": "Mediano",
+            "municipios_conabio": [],
+            "regiones_koppen": ["CWA",'CWB'],
+            "clorofila": 0,
+            "imagen_url": "https://static.wixstatic.com/media/e887b4_dcb1e31f346349229a18188382b55d51~mv2.jpg"
         },
         {
             "nombre_comun":"Primavera",
